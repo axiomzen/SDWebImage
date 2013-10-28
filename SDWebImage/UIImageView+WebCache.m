@@ -14,37 +14,37 @@ static char operationArrayKey;
 
 @implementation UIImageView (WebCache)
 
-- (void)setImageWithURL:(NSURL *)url
+- (void)setImageWithURLWC:(NSURL *)url
 {
-    [self setImageWithURL:url placeholderImage:nil options:0 progress:nil completed:nil];
+    [self setImageWithURLWC:url placeholderImage:nil options:0 progress:nil completed:nil];
 }
 
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder
+- (void)setImageWithURLWC:(NSURL *)url placeholderImage:(UIImage *)placeholder
 {
-    [self setImageWithURL:url placeholderImage:placeholder options:0 progress:nil completed:nil];
+    [self setImageWithURLWC:url placeholderImage:placeholder options:0 progress:nil completed:nil];
 }
 
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options
+- (void)setImageWithURLWC:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options
 {
-    [self setImageWithURL:url placeholderImage:placeholder options:options progress:nil completed:nil];
+    [self setImageWithURLWC:url placeholderImage:placeholder options:options progress:nil completed:nil];
 }
 
-- (void)setImageWithURL:(NSURL *)url completed:(SDWebImageCompletedBlock)completedBlock
+- (void)setImageWithURLWC:(NSURL *)url completed:(SDWebImageCompletedBlock)completedBlock
 {
-    [self setImageWithURL:url placeholderImage:nil options:0 progress:nil completed:completedBlock];
+    [self setImageWithURLWC:url placeholderImage:nil options:0 progress:nil completed:completedBlock];
 }
 
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletedBlock)completedBlock
+- (void)setImageWithURLWC:(NSURL *)url placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletedBlock)completedBlock
 {
-    [self setImageWithURL:url placeholderImage:placeholder options:0 progress:nil completed:completedBlock];
+    [self setImageWithURLWC:url placeholderImage:placeholder options:0 progress:nil completed:completedBlock];
 }
 
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletedBlock)completedBlock
+- (void)setImageWithURLWC:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletedBlock)completedBlock
 {
-    [self setImageWithURL:url placeholderImage:placeholder options:options progress:nil completed:completedBlock];
+    [self setImageWithURLWC:url placeholderImage:placeholder options:options progress:nil completed:completedBlock];
 }
 
-- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletedBlock)completedBlock
+- (void)setImageWithURLWC:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletedBlock)completedBlock
 {
     [self cancelCurrentImageLoad];
 

@@ -13,31 +13,31 @@ static char operationKey;
 
 @implementation UIButton (WebCache)
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state
+- (void)setImageWithURLWC:(NSURL *)url forState:(UIControlState)state
 {
-    [self setImageWithURL:url forState:state placeholderImage:nil options:0 completed:nil];
+    [self setImageWithURLWC:url forState:state placeholderImage:nil options:0 completed:nil];
 }
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder
+- (void)setImageWithURLWC:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder
 {
-    [self setImageWithURL:url forState:state placeholderImage:placeholder options:0 completed:nil];
+    [self setImageWithURLWC:url forState:state placeholderImage:placeholder options:0 completed:nil];
 }
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options
+- (void)setImageWithURLWC:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options
 {
-    [self setImageWithURL:url forState:state placeholderImage:placeholder options:options completed:nil];
+    [self setImageWithURLWC:url forState:state placeholderImage:placeholder options:options completed:nil];
 }
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state completed:(SDWebImageCompletedBlock)completedBlock
+- (void)setImageWithURLWC:(NSURL *)url forState:(UIControlState)state completed:(SDWebImageCompletedBlock)completedBlock
 {
-    [self setImageWithURL:url forState:state placeholderImage:nil options:0 completed:completedBlock];
+    [self setImageWithURLWC:url forState:state placeholderImage:nil options:0 completed:completedBlock];
 }
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletedBlock)completedBlock
+- (void)setImageWithURLWC:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletedBlock)completedBlock
 {
-    [self setImageWithURL:url forState:state placeholderImage:placeholder options:0 completed:completedBlock];
+    [self setImageWithURLWC:url forState:state placeholderImage:placeholder options:0 completed:completedBlock];
 }
 
-- (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletedBlock)completedBlock
+- (void)setImageWithURLWC:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletedBlock)completedBlock
 {
     [self cancelCurrentImageLoad];
 
